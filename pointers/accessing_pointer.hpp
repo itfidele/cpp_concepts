@@ -10,6 +10,8 @@ void accessing_pointer(){
 
     *score_ptr= 300;
 
+    
+
     cout<<*score_ptr<<endl;
     cout<<score<<endl;
     

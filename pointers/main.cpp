@@ -2,8 +2,10 @@
 #include "accessing_pointer.hpp"
 #include "pointer_allocation_memory.hpp"
 #include "enums.hpp"
-#include "pointers_function.hpp"
+#include "pointers_function_passbyvalue.hpp"
+#include "pointer_function.hpp"
 #include <vector>
+#include <string>
 
 using namespace std;
 
@@ -46,10 +48,19 @@ int main(int argc, char const *argv[])
     // }
 
 
-    int num {10};
-    cout<<num<<endl;
-    square_root(&num);
-    cout<<num<<endl;
+    // int num {10};
+    // cout<<num<<endl;
+    // square_root(&num);
+    // cout<<num<<endl;
+
+
+    auto names = create_array(10,"Fidele Ni Umuti");
+
+    for (size_t i = 0; i < 10; i++)
+    {
+        cout<<names[i]<<endl;
+    }
+    
     
 
     return 0;

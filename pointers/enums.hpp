@@ -8,8 +8,4 @@ enum Gender
 struct info{
     int age;
     Gender gender;
-    int save()
-    {
-        
-    }
 };
