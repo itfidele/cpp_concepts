@@ -30,13 +30,15 @@ void allocate_memory_array()
 }
 
 void array_and_pointer_relationships(){
+
+    //arrays
     
     int score[] {100,300,700};
     
-    cout<<score<<endl;
+    cout<<score<<endl; 
     cout<<*score<<endl;
 
-
+    // pointers
     int *score_ptr {score};
 
     cout<<(score_ptr+1)<<endl;
