@@ -54,14 +54,25 @@ int main(int argc, char const *argv[])
     // cout<<num<<endl;
 
 
-    auto names = create_array(10,"Fidele Ni Umuti");
+    // auto names = create_array(10,"Fidele Ni Umuti");
 
-    for (size_t i = 0; i < 10; i++)
-    {
-        cout<<names[i]<<endl;
-    }
+    // for (size_t i = 0; i < 10; i++)
+    // {
+    //     cout<<names[i]<<endl;
+    // }
     
+
+    //  test references 
+    // vector<string> programmings {"Python","c++","javascripts"};
     
+    // for(auto programming:programmings)
+    //     programming = "Python"; // this won't change it
+
+    // for (auto &programming : programmings) // this line will make a change
+    //     programming = "Python"; // this won't change it
+
+    // for (auto programming : programmings)
+    //     cout<<programming<<endl;
 
     return 0;
 }
