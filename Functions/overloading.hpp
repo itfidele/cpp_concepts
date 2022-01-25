@@ -23,12 +23,3 @@ void greet(string firstname,string lastname){
     cout<<endl;
 }
 
-int main(){
-    cout<<"Overloading program example"<<endl<<endl;
-    cout<<"greet() function with only first name"<<endl;
-    greet("Fidele");
-    cout<<"greet() function with both firstname and lastname"<<endl; // output : Hello Fidele
-    greet("Fidele","Kirezi"); // output : Fidele Kirezi
-    cout<<endl;
-    return 0;
-}
