@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-void print(int arr[],size_t size);
+void print(const int *const arr,size_t size);
 int *apply_all(int arr1[],size_t arr1_size,int arr2[],size_t arr2_size);
 
 int *apply_all(int arr1[], size_t arr1_size, int arr2[], size_t arr2_size){
@@ -26,7 +26,7 @@ int *apply_all(int arr1[], size_t arr1_size, int arr2[], size_t arr2_size){
 }
 
 
-void print(int arr[],size_t size){
+void print(const int *const arr,size_t size){
     cout<<"[";
     for (size_t i = 0; i < size; i++)
     {

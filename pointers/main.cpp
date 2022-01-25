@@ -82,7 +82,7 @@ int main(int argc, char const *argv[])
     */
 
     /*
-        test the challenge from challenge.hpp dynamic allocation using pointers
+        ///test the challenge from challenge.hpp dynamic allocation using pointers
 
     int arr1[] { 1, 2, 3, 4, 5 };
     int arr2[] { 10, 20, 30 };
