@@ -4,14 +4,22 @@
 
 #include "Account.hpp"
 
-void Account::setName(std::string name) {
-    name = name;
+void Account::setName(std::string user_name) {
+    username = user_name;
 }
 
 void Account::fullName(std::string fullname) {
     fullname = fullname;
 }
 
-void Account::print() {
-    std::cout<<name<<std::endl;
+std::string Account::getName(){
+    return username;
+}
+
+std::string Account::getFullName() {
+    return fullname;
+}
+
+void Account::setFullName(std::string full_name) {
+    fullname = full_name;
 }

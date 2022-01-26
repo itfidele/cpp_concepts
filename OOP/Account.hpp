@@ -1,19 +1,21 @@
 //
 // Created by fidele on 26/01/2022.
 //
-#include <iostream>
+
 #ifndef C__CONCEPTS_ACCOUNT_HPP
 #define C__CONCEPTS_ACCOUNT_HPP
-
+#include <string>
 
 class Account {
 private:
-    std::string name;
+    std::string username;
     std::string fullname;
 public:
-    void setName(std::string name);
-    void fullName(std::string fullname);
-    void print();
+    void setName(std::string user_name);
+    void fullName(std::string full_name);
+    std::string getName();
+    void setFullName(std::string fullname);
+    std::string getFullName();
 };
 
 

@@ -14,6 +14,8 @@ int main(int argc, char const *argv[])
     */
     Account bill;
     bill.setName("Fidele");
-    bill.print();
+    bill.setFullName("Fidele K.Cyisa");
+    cout<<"Name: "<<bill.getName()<<endl;
+    cout<<"Full Name: "<<bill.getFullName()<<endl;
     return 0;
 }
