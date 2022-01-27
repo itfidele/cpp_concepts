@@ -4,6 +4,16 @@
 
 #include "Account.hpp"
 
+Account::Account() {
+    std::cout<<"No Arguments Passed"<<std::endl;
+}
+Account::~Account() {
+    std::cout<<"Destructor called for <"<<username<<">"<<std::endl;
+}
+Account::Account(std::string user_name) {
+    username = user_name;
+    std::cout<<"One argument received"<<std::endl;
+}
 void Account::setName(std::string user_name) {
     username = user_name;
 }

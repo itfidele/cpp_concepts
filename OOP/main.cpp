@@ -12,8 +12,7 @@ int main(int argc, char const *argv[])
     delete user; // delete data from the hip after uring them
 
     */
-    Account bill;
-    bill.setName("Fidele");
+    Account bill {"Fidele"}; // this call the constructor
     bill.setFullName("Fidele K.Cyisa");
     cout<<"Name: "<<bill.getName()<<endl;
     cout<<"Full Name: "<<bill.getFullName()<<endl;
