@@ -10,14 +10,18 @@ class Account {
 private:
     std::string username;
     std::string fullname;
+    double amount;
 public:
     void setName(std::string user_name);
     void fullName(std::string full_name);
+    void deposit(double val){ amount+=val; }
+    void withdraw(double val){ amount-=val; }
     std::string getName();
     void setFullName(std::string fullname);
     std::string getFullName();
-    //Overloaded constructors
+    double getBalance();
     Account();
+    //Overloaded constructor
     Account(std::string user_name);
     ~Account();
 };

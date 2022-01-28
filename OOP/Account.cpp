@@ -5,14 +5,16 @@
 #include "Account.hpp"
 
 Account::Account() {
-    std::cout<<"No Arguments Passed"<<std::endl;
+    username = "<Empty>";
+    //std::cout<<"No Arguments Passed"<<std::endl;
 }
 Account::~Account() {
     std::cout<<"Destructor called for <"<<username<<">"<<std::endl;
 }
+//overloading constructoe
 Account::Account(std::string user_name) {
     username = user_name;
-    std::cout<<"One argument received"<<std::endl;
+    //std::cout<<"One argument received"<<std::endl;
 }
 void Account::setName(std::string user_name) {
     username = user_name;
@@ -32,4 +34,8 @@ std::string Account::getFullName() {
 
 void Account::setFullName(std::string full_name) {
     fullname = full_name;
+}
+
+double Account::getBalance() {
+    return amount;
 }
