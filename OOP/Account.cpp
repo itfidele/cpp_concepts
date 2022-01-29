@@ -4,9 +4,9 @@
 
 #include "Account.hpp"
 
-Account::Account() {
-    username = "<Empty>";
-    //std::cout<<"No Arguments Passed"<<std::endl;
+//better way to initialize constructor
+Account::Account(): username {"<Empty>"},fullname {"None"},amount{0.0}{
+
 }
 Account::~Account() {
     std::cout<<"Destructor called for <"<<username<<">"<<std::endl;
