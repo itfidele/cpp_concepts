@@ -1,6 +1,7 @@
 #include <iostream>
 #include "class_decralation.hpp"
 #include "Account.hpp"
+#include "Player.hpp"
 using namespace std;
 
 int main(int argc, char const *argv[])
@@ -12,9 +13,14 @@ int main(int argc, char const *argv[])
     delete user; // delete data from the hip after uring them
 
     */
-    Account bill {"Fidele"}; // this call the constructor
-    bill.setFullName("Fidele K.Cyisa");
-    cout<<"Name: "<<bill.getName()<<endl;
-    cout<<"Full Name: "<<bill.getFullName()<<endl;
-    return 0;
+//    Account bill {"Fidele"}; // this call the constructor
+//    bill.setFullName("Fidele K.Cyisa");
+//    cout<<"Name: "<<bill.getName()<<endl;
+//    cout<<"Full Name: "<<bill.getFullName()<<endl;
+//    return 0;
+
+    Player flank;
+    Player fidele {"Fidele"};
+    Player eric {"Eric",30,90};
+
 }
