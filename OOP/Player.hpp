@@ -18,6 +18,12 @@ public:
     Player();
     Player(std::string name_v);
     Player(std::string name_v,double health_v,double salary_v);
+    // Copy constructor
+    Player(const Player &player);
+    std::string getFullName();
+    double getHealth();
+    double getSalary();
+    ~Player(){ std::cout<<"Destructor called"<<std::endl; };
 };
 
 

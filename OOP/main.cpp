@@ -4,6 +4,13 @@
 #include "Player.hpp"
 using namespace std;
 
+void display_player(Player p){
+    cout<<"Full Name: "<<p.getFullName()<<endl;
+    cout<<"Health: "<<p.getHealth()<<endl;
+    cout<<"Salary: "<<p.getSalary()<<endl;
+
+}
+
 int main(int argc, char const *argv[])
 {
     /*
@@ -20,6 +27,7 @@ int main(int argc, char const *argv[])
 //    return 0;
 
     Player flank;
+    display_player(flank); // Copying of constructor
     Player fidele {"Fidele"};
     Player eric {"Eric",30,90};
 
