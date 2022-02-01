@@ -2,6 +2,12 @@
 #include "class_decralation.hpp"
 #include "Account.hpp"
 #include "Player.hpp"
+#include "Shallow.hpp"
+
+void display_shallow(Shallow obj){
+    std::cout<<obj.getData()<<std::endl;
+}
+
 using namespace std;
 
 void display_player(Player p){
@@ -26,9 +32,13 @@ int main(int argc, char const *argv[])
 //    cout<<"Full Name: "<<bill.getFullName()<<endl;
 //    return 0;
 
-    Player flank;
-    display_player(flank); // Copying of constructor
-    Player fidele {"Fidele"};
-    Player eric {"Eric",30,90};
+//    Player flank;
+//    display_player(flank); // Copying of constructor
+//    Player fidele {"Fidele"};
+//    Player eric {"Eric",30,90};
+    Shallow obj1 {13};
+    display_shallow(obj1);
+    Shallow obj2 {200};
+    display_shallow(obj2);
 
 }

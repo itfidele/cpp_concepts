@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(OOP_SOURCEFILES
     main.cpp
-        Account.cpp Player.cpp Player.hpp)
+        Account.cpp Player.cpp Player.hpp Shallow.cpp Shallow.hpp)
 
 
 add_executable(${PROJECT_NAME} ${OOP_SOURCEFILES})
