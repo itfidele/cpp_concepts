@@ -3,18 +3,24 @@
 #include "Account.hpp"
 #include "Player.hpp"
 #include "Shallow.hpp"
+#include "DeepCopy.hpp"
 
+using namespace std;
 void display_shallow(Shallow obj){
     std::cout<<obj.getData()<<std::endl;
 }
 
-using namespace std;
+
 
 void display_player(Player p){
     cout<<"Full Name: "<<p.getFullName()<<endl;
     cout<<"Health: "<<p.getHealth()<<endl;
     cout<<"Salary: "<<p.getSalary()<<endl;
 
+}
+
+void display_deepcopy(DeepCopy d){
+    cout<<d.getData()<<endl;
 }
 
 int main(int argc, char const *argv[])
@@ -36,9 +42,13 @@ int main(int argc, char const *argv[])
 //    display_player(flank); // Copying of constructor
 //    Player fidele {"Fidele"};
 //    Player eric {"Eric",30,90};
-    Shallow obj1 {13};
-    display_shallow(obj1);
-    Shallow obj2 {200};
-    display_shallow(obj2);
+//    Shallow obj1 {13};
+//    display_shallow(obj1);
+//    Shallow obj2 {200};
+//    display_shallow(obj2);
 
+    DeepCopy obj1 {13};
+    display_deepcopy(obj1);
+    DeepCopy obj2 {200};
+    display_deepcopy(obj2);
 }
