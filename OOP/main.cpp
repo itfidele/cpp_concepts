@@ -4,6 +4,8 @@
 #include "Player.hpp"
 #include "Shallow.hpp"
 #include "DeepCopy.hpp"
+#include "Move.hpp"
+#include <vector>
 
 using namespace std;
 void display_shallow(Shallow obj){
@@ -47,8 +49,13 @@ int main(int argc, char const *argv[])
 //    Shallow obj2 {200};
 //    display_shallow(obj2);
 
-    DeepCopy obj1 {13};
-    display_deepcopy(obj1);
-    DeepCopy obj2 {200};
-    display_deepcopy(obj2);
+//    DeepCopy obj1 {13};
+//    display_deepcopy(obj1);
+//    DeepCopy obj2 {200};
+//    display_deepcopy(obj2);
+    vector<Move> vec;
+    vec.push_back(Move{10});
+    vec.push_back(Move{20});
+
+
 }
