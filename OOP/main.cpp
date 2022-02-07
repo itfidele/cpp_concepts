@@ -58,7 +58,8 @@ int main(int argc, char const *argv[])
 //    vec.push_back(Move{20});
     cout<<Player::get_num_players()<<endl;
     Player player1;
-    Player player2;
+    Player *player2 = new Player();
+    delete player2;
     cout<<Player::get_num_players()<<endl;
     Player player3;
 
