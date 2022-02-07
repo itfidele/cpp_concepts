@@ -11,10 +11,12 @@
 
 class Player {
 private:
+    static int num_players;
     std::string fullname;
     double health;
     double salary;
 public:
+    static int get_num_players();
     Player();
     Player(std::string name_v);
     Player(std::string name_v,double health_v,double salary_v);
@@ -23,7 +25,7 @@ public:
     std::string getFullName();
     double getHealth();
     double getSalary();
-    ~Player(){ std::cout<<"Destructor called"<<std::endl; };
+    ~Player(){ --num_players; std::cout<<"Destructor called"<<std::endl; };
 };
 
 

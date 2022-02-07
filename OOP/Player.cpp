@@ -3,7 +3,11 @@
 //
 
 #include "Player.hpp"
+int Player::num_players =0;
 
+int Player::get_num_players() {
+    return num_players;
+}
 
 Player::Player():Player {"None",0,0}{
     std::cout<<"Constructor called"<<std::endl;
@@ -19,6 +23,7 @@ Player::Player(std::string name_v):Player{ name_v,0,0}{
 }
 
 Player::Player(std::string name_v,double health_v,double salary_v): fullname {name_v}, health {health_v}, salary {salary_v}{
+    ++num_players;
     std::cout<<"All-Args are passed"<<std::endl;
 }
 

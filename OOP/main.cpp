@@ -53,9 +53,14 @@ int main(int argc, char const *argv[])
 //    display_deepcopy(obj1);
 //    DeepCopy obj2 {200};
 //    display_deepcopy(obj2);
-    vector<Move> vec;
-    vec.push_back(Move{10});
-    vec.push_back(Move{20});
+//    vector<Move> vec;
+//    vec.push_back(Move{10});
+//    vec.push_back(Move{20});
 
+    Player player1;
+    Player player2;
+    Player player3;
+
+    cout<<Player::get_num_players()<<endl;
 
 }
