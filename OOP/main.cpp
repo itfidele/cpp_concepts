@@ -56,9 +56,10 @@ int main(int argc, char const *argv[])
 //    vector<Move> vec;
 //    vec.push_back(Move{10});
 //    vec.push_back(Move{20});
-
+    cout<<Player::get_num_players()<<endl;
     Player player1;
     Player player2;
+    cout<<Player::get_num_players()<<endl;
     Player player3;
 
     cout<<Player::get_num_players()<<endl;
