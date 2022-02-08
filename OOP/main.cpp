@@ -25,6 +25,11 @@ void display_deepcopy(DeepCopy d){
     cout<<d.getData()<<endl;
 }
 
+struct Person{
+    string name;
+    string email;
+    string password;
+};
 int main(int argc, char const *argv[])
 {
     /*
@@ -56,13 +61,17 @@ int main(int argc, char const *argv[])
 //    vector<Move> vec;
 //    vec.push_back(Move{10});
 //    vec.push_back(Move{20});
-    cout<<Player::get_num_players()<<endl;
-    Player player1;
-    Player *player2 = new Player();
-    delete player2;
-    cout<<Player::get_num_players()<<endl;
-    Player player3;
-
-    cout<<Player::get_num_players()<<endl;
+//    cout<<Player::get_num_players()<<endl;
+//    Player player1;
+//    Player *player2 = new Player();
+//    delete player2;
+//    cout<<Player::get_num_players()<<endl;
+//    Player player3;
+//    cout<<Player::get_num_players()<<endl;
+    Person fidele {"Fidele K.Cyisa","itfidele@gmail.com","welcome123"};
+    //test struct
+    cout<<"Name: "<<fidele.name<<endl;
+    cout<<"Email: "<<fidele.email<<endl;
+    cout<<"Password:"<<fidele.password<<endl;
 
 }
