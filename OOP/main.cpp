@@ -6,7 +6,8 @@
 #include "DeepCopy.hpp"
 #include "Move.hpp"
 #include <vector>
-
+#include "Movie.hpp"
+#include "Movies.hpp"
 using namespace std;
 void display_shallow(Shallow obj){
     std::cout<<obj.getData()<<std::endl;
@@ -68,10 +69,26 @@ int main(int argc, char const *argv[])
 //    cout<<Player::get_num_players()<<endl;
 //    Player player3;
 //    cout<<Player::get_num_players()<<endl;
-    Person fidele {"Fidele K.Cyisa","itfidele@gmail.com","welcome123"};
-    //test struct
-    cout<<"Name: "<<fidele.name<<endl;
-    cout<<"Email: "<<fidele.email<<endl;
-    cout<<"Password:"<<fidele.password<<endl;
+//    Person fidele {"Fidele K.Cyisa","itfidele@gmail.com","welcome123"};
+//    //test struct
+//    cout<<"Name: "<<fidele.name<<endl;
+//    cout<<"Email: "<<fidele.email<<endl;
+//    cout<<"Password:"<<fidele.password<<endl;
+
+    Movies movies;
+    Movie fidele=Movie("fidele",3,6);
+    Movie eric=Movie("Eric",3,5);
+    movies.addMovie(fidele);
+    movies.addMovie(eric);
+    movies.displayAllMovies();
+    cout<<"Test modification"<<endl;
+    movies.incrementMovieCount(fidele);
+    movies.incrementMovieCount(fidele);
+    movies.incrementMovieCount(fidele);
+    movies.displayAllMovies();
+
+    return 0;
 
 }
+
+
