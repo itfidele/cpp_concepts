@@ -4,8 +4,9 @@
 
 #ifndef C__CONCEPTS_ACCOUNT_HPP
 #define C__CONCEPTS_ACCOUNT_HPP
-#include <string>
 #include <iostream>
+#include <string>
+
 class Account {
 private:
     std::string username;
