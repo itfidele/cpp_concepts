@@ -1,9 +1,12 @@
 #include <iostream>
-#include "Hello.h"
-
-using namespace Hello;
-
+#include <cstring>
+#include "MyString.hpp"
 int main(){
-    Hello::GreetMe();
-    Hello::HelloWord();
+    MyString empty;
+    MyString larry("larry");
+    MyString stooge {larry};
+
+    empty.display();
+    larry.display();
+    stooge.display();
 }

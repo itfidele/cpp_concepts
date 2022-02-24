@@ -8,8 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(OPERATOROVERLOADING_SOURCEFILES
     main.cpp
-    Hello.cpp
-    )
+        MyString.cpp MyString.hpp)
 
 
 add_executable(${PROJECT_NAME} ${OPERATOROVERLOADING_SOURCEFILES})
