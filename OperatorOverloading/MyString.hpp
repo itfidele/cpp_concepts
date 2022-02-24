@@ -5,6 +5,7 @@
 #ifndef C__CONCEPTS_MYSTRING_HPP
 #define C__CONCEPTS_MYSTRING_HPP
 #include <iostream>
+#include <cstring>
 
 class MyString {
 private:
@@ -13,6 +14,7 @@ public:
     MyString();
     MyString(const char* s);
     MyString(const MyString &source);
+    MyString &operator=(const MyString &rhs);
     ~MyString();
     void display() const;
     int get_length() const;

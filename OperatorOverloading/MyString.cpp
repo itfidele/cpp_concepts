@@ -1,7 +1,7 @@
 //
 // Created by fidele on 23/02/2022.
 //
-#include <cstring>
+
 #include "MyString.hpp"
 
 MyString::MyString():str(nullptr) {
@@ -41,3 +41,16 @@ int MyString::get_length() const { return std::strlen(str); }
 
 // string getter
 const char *MyString::get_str() const{ return str;}
+
+// copy assignment
+MyString &MyString::operator=(const MyString &rhs){
+    std::cout<<"Copy Assignments "<<std::endl;
+    if(this == &rhs)
+        return *this;
+    
+    delete[] this->str;
+    str=new char[std::strlen(rhs.str)+1];
+    std::strcpy(this->str,rhs.str);
+
+    return *this;
+}
