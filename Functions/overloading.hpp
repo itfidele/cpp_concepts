@@ -17,9 +17,9 @@ void greet(string firstname){
     cout<<endl;
 }
 
-void greet(string firstname,string lastname){
-    // it will display both names if both names are provided
-    cout<<"> "<<firstname+" "+lastname;
-    cout<<endl;
-}
+// void greet(string firstname,string lastname){
+//     // it will display both names if both names are provided
+//     cout<<"> "<<firstname+" "+lastname;
+//     cout<<endl;
+// }
 

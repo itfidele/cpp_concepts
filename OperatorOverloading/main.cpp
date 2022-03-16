@@ -1,15 +1,8 @@
 #include <iostream>
 #include <cstring>
-#include "MyString.hpp"
+#include "String.hpp"
 int main(){
-    MyString empty;
-    MyString larry("larry");
-    MyString stooge {larry};
-    empty="Copy assignments test";
-
-    empty.display();
-    empty=larry;
-    empty.display();
-    larry.display();
-    stooge.display();
-}
+    String empty;
+    empty="Salam man Bimeze gute"; // operator overloading to my custom(<String>) class
+    std::cout<<empty.getText()<<std::endl;
+}  
