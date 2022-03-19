@@ -14,6 +14,7 @@ class String{
         //String(std::string txt);
         ~String();
         void operator=(std::string txt);
+        void operator+=(std::string str);
         std::string getText(){ return text; }
 };
 

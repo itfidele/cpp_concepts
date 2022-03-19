@@ -8,3 +8,6 @@ add_subdirectory(Pointers)
 add_subdirectory(OOP)
 add_subdirectory(OperatorOverloading)
 add_subdirectory(Inherintance)
+
+# testing some concepts
+add_subdirectory(SignalsExample)
