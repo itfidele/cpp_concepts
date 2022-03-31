@@ -18,6 +18,6 @@ int main(){
 
     raise(SIGINT);
 
-    cout<<signal_variable<<endl;
+    cout<<signal_variable<<endl; // this should return 10
     return 0;
 }

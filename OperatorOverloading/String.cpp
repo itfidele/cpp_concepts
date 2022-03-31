@@ -14,7 +14,7 @@ void String::operator=(std::string txt){
 }
 
 void String::operator+=(std::string txt){
-    text+=txt;
+    text.append(txt);
 }
 String::~String(){
     
