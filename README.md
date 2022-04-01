@@ -1,2 +1,2 @@
-# cpp_concepts_practice
-c++ some concepts practice codes
+# cpp_concepts 
+c++ 11 sample programs > all concepts of c++ 
