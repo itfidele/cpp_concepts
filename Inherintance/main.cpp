@@ -1,4 +1,6 @@
 #include "Account.hpp"
+#include "Base.hpp"
+#include "Derived.hpp"
 #include "Savings_Account.hpp"
 #include <iostream>
 
@@ -32,5 +34,16 @@ int main(){
     destin_saving->withdraw(400.0);
     delete destin_saving;
 
+    cout<<"============== Base memeber access from Base object========================"<<endl;
+    Base base;
+    base.a=100; //OK
+    //base.b=200;
+    //base.c=200; //Compiler Error
+    
+    cout<<"============== Base memeber access from Derived object======================"<<endl;
+    Derived d;
+    d.a=100; // Ok
+    //d.b=200; //Error
+    //d.c=300; // Error
     return 0;
 }
