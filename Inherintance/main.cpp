@@ -45,5 +45,11 @@ int main(){
     d.a=100; // Ok
     //d.b=200; //Error
     //d.c=300; // Error
+
+    Base bee;
+    Base b{100};
+    Derived de;
+    Derived be{100};
+
     return 0;
 }
