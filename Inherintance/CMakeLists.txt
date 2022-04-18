@@ -1,6 +1,4 @@
 cmake_minimum_required(VERSION 3.18)
-
-cmake_minimum_required(VERSION 3.18)
 file(GLOB SRC_FILES *.cpp)
 file(GLOB HDR_FILES ./include/*.hpp)
 
