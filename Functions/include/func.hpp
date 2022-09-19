@@ -17,6 +17,8 @@ void greet(string firstname, string lastname)
     cout << firstname + " " + lastname << endl;
 }
 
+
+
 void changeArray(int numbers[],size_t size){
     for(int i{0}; i<size;i++)
         numbers[i]=3;
@@ -26,3 +28,4 @@ void change_number(int &one){
     int &a = one;
     a=50;
 }
+

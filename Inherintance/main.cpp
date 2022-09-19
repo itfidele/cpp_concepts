@@ -1,6 +1,7 @@
 #include "Account.hpp"
 #include "Base.hpp"
 #include "Derived.hpp"
+#include "Person.hpp"
 #include "Savings_Account.hpp"
 #include <iostream>
 
@@ -53,5 +54,7 @@ int main(){
 
     Derived d{10009};
 
+    Person p = Person("Karabaye");
+    p.greetings();
     return 0;
 }
